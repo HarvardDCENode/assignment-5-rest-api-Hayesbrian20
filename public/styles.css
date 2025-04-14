@@ -1,0 +1,112 @@
+
+body {
+    background-color: #fdf6ec;
+    font-family: 'Georgia', serif;
+    color: #333;
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  
+  h1, h2, h3 {
+    color: #7a2e2e;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: normal;
+  }
+  
+
+  a {
+    color: #a0522d;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+
+  ul {
+    padding-left: 1.2rem;
+    list-style-type: square;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  
+
+  form {
+     background-color: #fefaf5;
+     padding: 1rem;
+     margin: 2rem 0;
+     border: 1px solid #e6ddd2;
+     border-radius: 6px;
+     box-shadow: none;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+  }
+  
+
+  label input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.4rem;
+    vertical-align: middle;
+  }
+  
+
+  button,
+  .btn {
+    background-color: #8b0000;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: inline-block;
+    margin: 0.25rem 0;
+  }
+  
+  button:hover,
+  .btn:hover {
+    background-color: #a52a2a;
+  }
+  
+
+  .btn-inline {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+    background-color: #b22222;
+    margin-left: 0.5rem;
+    display: inline-block;
+  }
+  
+  .btn-inline:hover {
+    background-color: #dc143c;
+  }
+  
+
+  .mt-1 { margin-top: 1rem; }
+  .mb-1 { margin-bottom: 1rem; }
+  .text-muted { color: #777; font-size: 0.9rem; }
+  
+  

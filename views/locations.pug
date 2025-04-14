@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Locations
+    link(rel="stylesheet", href="/styles.css")
+  body
+    h1 Locations
+    a(href='/locations/new') Add Location
+    ul
+      each location in locations
+        li
+          | #{location.name} - #{location.address} on #{location.date.toDateString()}
+          if location.isActive
+            |  (Active)
+          a(href=`/locations/${location._id}/edit`) Edit
+          form(action=`/locations/${location._id}?_method=DELETE`, method="POST", style="display:inline")
+            button(type="submit") Delete
+    a(href='/') Back Home

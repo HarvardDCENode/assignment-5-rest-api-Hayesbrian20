@@ -1,0 +1,32 @@
+{
+  "name": "assignment-5-rest-api-hayesbrian20",
+  "version": "1.0.0",
+  "description": "The description of this assignment can be found in Canvas at [Assignment #3](https://canvas.harvard.edu/courses/150064/assignments/906133) (Spring 2025)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/www",
+    "dev": "nodemon bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarvardDCENode/assignment-4-express-routing-mongodb-and-mongoose-Hayesbrian20.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarvardDCENode/assignment-4-express-routing-mongodb-and-mongoose-Hayesbrian20/issues"
+  },
+  "homepage": "https://github.com/HarvardDCENode/assignment-4-express-routing-mongodb-and-mongoose-Hayesbrian20#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.12.1",
+    "nodemon": "^3.1.9",
+    "pug": "^3.0.3"
+  }
+}

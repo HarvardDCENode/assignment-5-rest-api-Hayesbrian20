@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Charcuterie Bar
+    link(rel="stylesheet", href="/styles.css")
+  body
+    h1 Welcome to the Charcuterie Bar
+    h2 Current Locations
+    ul
+      each location in locations
+        li #{location.name} - #{location.address} on #{location.date.toDateString()}
+    
+    h2 Menu
+    ul
+      each item in menu
+        li #{item.item}: $#{item.price.toFixed(2)} - #{item.description}
+    
+    a(href='/locations') Manage Locations
+    br
+    a(href='/menu') Manage Menu

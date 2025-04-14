@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Add/Edit Location
+    link(rel="stylesheet", href="/styles.css")
+  body
+    h1= location ? 'Edit Location' : 'Add Location'
+    form(action=location ? `/locations/${location._id}?_method=PUT` : '/locations', method="POST")
+      input(type="text", name="name", placeholder="Event Name", value=location ? location.name : '')
+      input(type="text", name="address", placeholder="Address", value=location ? location.address : '')
+      input(type="date", name="date", value=location ? location.date.toISOString().split('T')[0] : '')
+      input(type="text", name="hours", placeholder="Hours of Operation", value=location ? location.hours : '')
+      label
+        input(type="checkbox", name="isActive", checked=location && location.isActive)
+        | Active?
+      button(type="submit")= location ? 'Update Location' : 'Add Location'
+    a(href='/locations') Back to Locations

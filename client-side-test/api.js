@@ -7,7 +7,7 @@
    
     callAPI('GET', '/api/locations')
       .then((list) => {
-        console.log('📦 LIST RESULTS:', list);
+        console.log('LIST RESULTS:', list);
         testId = list[0]?._id;
       })
       .then(() => {

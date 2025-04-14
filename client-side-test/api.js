@@ -1,5 +1,5 @@
 (function () {
-  const baseURL = 'http://localhost:3000'; // Change this to your server IP/domain if deployed
+  const baseURL = 'http://localhost:3000';
 
   function testAPIs() {
     let testId = '';
